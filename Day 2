@@ -1,0 +1,4 @@
+Differences between Document Object and Window Object
+The primary difference between the document object and the window object is their scope. The document object represents the contents of the web page and can be manipulated to change the page's contents. The window object represents the browser window and can be manipulated to change how the web page is displayed to the user.
+
+Another key difference between the two objects is their relationship to the DOM. The document object is a part of the DOM and represents the hierarchical structure of the web page. The window object is also part of the DOM but represents the browser window rather than the web page itself.
