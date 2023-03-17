@@ -1,0 +1,39 @@
+{
+  "name": "Praveenraj S",
+  "email": "spr887011@gmail.com",
+  "phone": "8870118193",
+  "address": {
+    "Door No": "14",
+    "street": "SS streeet",
+    "Village": "Alangudi",
+    "city": "Pudukkottai",
+    "state": "Tamil Nadu",
+    "zip": "622301"
+  },
+  "summary": "1+ year experience in syncfusion software developer with a focus on web development and window application development.",
+  "education": {
+    "degree": "Bachelor of Engineering in Computer Science",
+    "institution": "Mookambigai college of engineering",
+    "year": "2021"
+  },
+  "experience": {
+    "position": "Software Engineer",
+    "company": "Syncfusion",
+    "location": "Chennai",
+    "startDate": "2021-Nov-01",
+    "endDate": "2022-Mar-14",
+    "description": "1+ year experience in syncfusion software developer with a focus on web development and window application development."
+  },
+  "skills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "Git",
+    "C#",
+    "Web development",
+    "Windows application development",
+    "My SQL"
+  ]
+}
