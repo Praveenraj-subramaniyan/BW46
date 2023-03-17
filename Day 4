@@ -1,0 +1,27 @@
+1. 
+let obj1 = {name: "Person 1", age:5};
+let obj2 = {age:5, name: "Person 1"};
+let keys1 = Object.keys(obj1).sort();
+let keys2 = Object.keys(obj2).sort();
+function check(){
+if (JSON.stringify(keys1) === JSON.stringify(keys2)) {
+  for(var i =0; i < keys1.length; i++ ){
+     if(obj1[keys1[i]] == obj2[keys2[i]])
+     {
+         continue;
+     }
+     else
+     {
+         return false;
+     }
+  }
+  return true;
+} else {
+  return false;
+}
+}
+if (check()) {
+  console.log("The two objects are equal.");
+} else {
+  console.log("The two objects are not equal.");
+}
