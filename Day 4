@@ -25,3 +25,23 @@ if (check()) {
 } else {
   console.log("The two objects are not equal.");
 }
+
+2.
+
+
+const https = require('https');
+
+https.get('https://restcountries.com/v3.1/all', (response) => {
+  let data = '';
+
+  response.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  response.on('end', () => {
+    const countries = JSON.parse(data);
+    console.log(countries);
+  });
+}).on('error', (error) => {
+  console.error(error);
+});
