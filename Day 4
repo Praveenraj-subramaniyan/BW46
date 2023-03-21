@@ -25,9 +25,8 @@ if (check()) {
 } else {
   console.log("The two objects are not equal.");
 }
-
+--------------------------------------------------------------------------------------
 2.
-
 
 const https = require('https');
 
@@ -40,8 +39,38 @@ https.get('https://restcountries.com/v3.1/all', (response) => {
 
   response.on('end', () => {
     const countries = JSON.parse(data);
-    console.log(countries);
+    countries.forEach((country) => {
+      console.log(country.flags);
+    });
   });
 }).on('error', (error) => {
   console.error(error);
 });
+--------------------------------------------------------------------------------------
+3.
+
+const https = require('https');
+
+https.get('https://restcountries.com/v3.1/all', (response) => {
+  let data = '';
+
+  response.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  response.on('end', () => {
+    const countries = JSON.parse(data);
+    countries.forEach((country) => {
+      console.log(country.name);
+      console.log(country.region);
+      console.log(country.subregion);
+      console.log(country.population);
+      console.log("---------------------------------------------------------");
+    });
+  });
+}).on('error', (error) => {
+  console.error(error);
+});
+----------------------------------------------------------------------------------------
+
+
