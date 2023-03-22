@@ -89,3 +89,21 @@ function palindrome(a) {
   return false;
 }
 -----------------------------------------------------------------------------
+6.
+
+(function () {
+var c;
+var a=[1,4,5,2,5];
+var d=[1,3,4,1,8];
+var e=0;
+a.sort();
+d.sort();
+var median = (a.length ) / 2
+let rounded = Math.round(median);
+ var b = function(rounded){
+     c= (a[rounded] +d[rounded])/2
+     return c
+ }
+ console.log(b(rounded))
+})()
+---------------------------------------------------------------------
