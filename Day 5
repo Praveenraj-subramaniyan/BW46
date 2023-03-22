@@ -1,0 +1,39 @@
+Do the below programs in anonymous function & IIFE
+
+1. 
+(function (){
+    var a=[2,3,4,5,7,6,9]
+    a.forEach(function(a) {
+        if(a %2 ===0){
+            
+        }
+        else{
+            var b= function(a){
+                console.log(a)
+            }
+        b(a);
+        }
+});
+}())
+------------------------------------------------------------------------
+2.
+var c;
+var d;
+var b;
+var e;
+(function (){
+    var a=["hello world", "foo bar", "baz qux"]
+    a.forEach(function(a) {
+      
+             c =a.split("");
+          d= c[0].toUpperCase()
+             b= function(d){
+              console.log(d)
+        
+        }
+        c[0]=d
+        e = c.join(" ");
+        b(e);
+});
+}())
+-------------------------------------------------------------------------
