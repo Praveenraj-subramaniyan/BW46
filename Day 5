@@ -37,3 +37,55 @@ var e;
 });
 }())
 -------------------------------------------------------------------------
+3.
+var c = 0;
+(function (){
+    var a=[1,8,9,7,4,5,6,2]
+    a.forEach(function(a) {
+          c= c +a;
+});
+      b= function(c){
+        console.log(c)
+        }
+        b(c);
+}())
+---------------------------------------------------------------------------
+4.
+var c;
+var a=[1,8,9,7,4,5,6,2,11,17,0];
+a.forEach(function(a) {
+          c =isPrime(a);
+          if(c){
+              console.log(a)
+          }
+});
+function isPrime(a) {
+  if (a <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(a); i++) {
+    if (a % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+-----------------------------------------------------------------------
+5.
+var c;
+var a=["racecar","madam","hello","sir"];
+a.forEach(function(a) {
+          b =palindrome(a);
+          if(b){
+              console.log(a)
+          }
+});
+function palindrome(a) {
+  
+    var c = a.split('').reverse().join('');
+    if (a === c) {
+      return true;
+    }
+  return false;
+}
+-----------------------------------------------------------------------------
