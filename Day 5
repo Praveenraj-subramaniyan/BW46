@@ -159,3 +159,24 @@ if(!isEven(num))
 }
 });
 -----------------------------------------------------------------------
+2.
+var c;
+ var d
+(function (){
+    var a=["hello world", "foo bar", "baz qux"]
+    a.forEach(function(a) {
+        let i = 0;
+             c =a.split("");
+         c.map(str =>{
+             if(i === 0){
+                 d = str.toUpperCase()
+                 i++
+                // 
+             }
+         })
+         c.splice(d,1)
+         c.unshift(d)
+         console.log(c.join(""))
+    });
+}())
+--------------------------------------------------------------------
