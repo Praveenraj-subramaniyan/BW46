@@ -107,3 +107,27 @@ let rounded = Math.round(median);
  console.log(b(rounded))
 })()
 ---------------------------------------------------------------------
+7.
+let myArray = [1, 2, 3, 2, 4, 3];
+
+let uniqueArray = [];
+(function(){
+     var a =function(a){
+     uniqueArray.push(a);
+ }
+for (let i = 0; i < myArray.length; i++) {
+  let isDuplicate = false;
+  for (let j = 0; j < uniqueArray.length; j++) {
+    if (myArray[i] === uniqueArray[j]) {
+      isDuplicate = true;
+      break;
+    }
+  }
+  if (!isDuplicate) {
+    a(myArray[i]);
+  }
+}
+}())
+ 
+console.log(uniqueArray)
+---------------------------------------------------------------------
