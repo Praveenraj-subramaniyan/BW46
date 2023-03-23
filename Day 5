@@ -148,13 +148,14 @@ a(myArray)
  
  programs in arrow functions.
  
- 1.let myArray = [1, 2, 3, 4, 5];
-
+1.
+let myArray = [1, 2, 3, 4, 5];
 myArray.forEach(function(num){
      const isEven = num => num % 2 === 0;
-    if(!isEven)
+    
+if(!isEven(num))
 {
-    console.log(num)
+   console.log(num)
 }
 });
 -----------------------------------------------------------------------
