@@ -131,3 +131,17 @@ for (let i = 0; i < myArray.length; i++) {
  
 console.log(uniqueArray)
 ---------------------------------------------------------------------
+8.
+let myArray = [1, 2, 3, 4,5];
+let k = 3;
+let uniqueArray = [];
+(function(){
+    var a= function(a){
+        console.log(a)
+    }
+for (let i = 0; i < k; i++) {
+  myArray.push(myArray.shift());
+}
+a(myArray)
+}())
+ ---------------------------------------------------------------------------
