@@ -209,3 +209,20 @@ function isPrime(a) {
   return true;
 }
 -------------------------------------------------------------------------------------
+5.
+var c;
+var a=["racecar","madam","hello","sir"];
+a.map(a => {
+          c =palindrome(a);
+          if(c){
+              console.log(a)
+          }
+});
+function palindrome(a) {
+    var c = a.split('').reverse().join('');
+    if (a === c) {
+      return true;
+    }
+  return false;
+}
+------------------------------------------------------------------------------------------------------
