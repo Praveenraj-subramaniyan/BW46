@@ -145,3 +145,16 @@ for (let i = 0; i < k; i++) {
 a(myArray)
 }())
  ---------------------------------------------------------------------------
+ 
+ programs in arrow functions.
+ 
+ 1.let myArray = [1, 2, 3, 4, 5];
+
+myArray.forEach(function(num){
+     const isEven = num => num % 2 === 0;
+    if(!isEven)
+{
+    console.log(num)
+}
+});
+-----------------------------------------------------------------------
