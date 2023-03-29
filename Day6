@@ -23,3 +23,35 @@ movieByRatings = getPG(allMovies)
 console.log(movieByRatings)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 2.
+class Circle {
+  constructor(radius =1.0, colour ="Blue") {
+    this.setRadius(radius) 
+    this.setColour(colour)
+  }
+  getRadius() {
+      console.log(this.radius)
+      return this.radius
+  }
+  setRadius(radius) {
+      this.radius = radius
+      }
+      getColour() {
+      console.log(this.colour)
+      return this.colour
+  }
+  setColour(colour) {
+      this.colour = colour
+      }
+ getArea(){
+     console.log((Math.PI * this.radius * this.radius).toFixed(2) + " square units" )
+ }
+  getCircumference(){
+     console.log((2 * Math.PI * this.radius).toFixed(2) + " units" )
+ }
+}
+a= new Circle(5,"Red")
+a.getRadius()
+a.getColour()
+a.getArea()
+a.getCircumference()
+----------------------------------------------------------------------------------------------------------------------
