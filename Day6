@@ -1,0 +1,23 @@
+1.
+var allMovies=[]
+var movieByRatings=[]
+class Movie {
+  constructor(title, studio, rating = "PG") {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+}
+function getPG(movies) {
+   return (movies.filter(movie => movie.rating === "PG"));
+ }
+a= new Movie("Iron Man","Marvel")
+b= new Movie("Batman","DC")
+c= new Movie("Ant Man","Marvel","pd")
+allMovies.push(a)
+allMovies.push(b)
+allMovies.push(c)
+movieByRatings = getPG(allMovies)
+console.log(movieByRatings)
+----------------------------------------------------------------------------------------------------------------------------------------------
+2.
