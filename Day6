@@ -55,3 +55,48 @@ a.getColour()
 a.getArea()
 a.getCircumference()
 ----------------------------------------------------------------------------------------------------------------------
+3.
+class Person {
+  constructor(firstName, lastName, gender, phone) {
+    this.setfirstName(firstName) 
+    this.setLastName(lastName)
+    this.setGender(gender)
+    this.setPhone(phone)
+  }
+  getfirstName() {
+      console.log(this.firstName)
+      return this.firstName
+  }
+  setfirstName(firstName) {
+      this.firstName = firstName
+      }
+      getLastName() {
+      console.log(this.lastName)
+      return this.lastName
+  }
+  setLastName(lastName) {
+      this.lastName = lastName
+      }
+      
+     getGender() {
+      console.log(this.gender)
+      return this.gender
+  }
+  setGender(gender) {
+      this.gender = gender
+      }
+   getPhone() {
+      console.log(this.phone)
+      return this.phone
+  }
+  setPhone(phone) {
+      this.phone = +phone
+      }
+}
+a= new Person("Praveen", "Raj", "M", 8870118193)
+a.getfirstName()
+a.getLastName()
+a.getGender()
+a.getPhone()
+--------------------------------------------------------------------------------------------------------
+4.
