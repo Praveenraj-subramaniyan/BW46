@@ -100,3 +100,29 @@ a.getGender()
 a.getPhone()
 --------------------------------------------------------------------------------------------------------
 4.
+class Price {
+  constructor(kiloMeter, price) {
+    this.setkiloMeter(kiloMeter) 
+    this.setprice(price) 
+  }
+  getkiloMeter() {
+      console.log(this.kiloMeter)
+      return this.kiloMeter
+  }
+  setkiloMeter(kiloMeter) {
+      this.kiloMeter = +kiloMeter
+      }
+      getprice() {
+      console.log(this.price)
+      return this.price
+  }
+  setprice(price) {
+      this.price = price
+      }
+      calculatePrice(){
+          var price = (this.kiloMeter *  this.price ) + (0.18 * this.kiloMeter *  this.price)
+          return price
+      }
+}
+a= new Price(5,20)
+console.log(a.calculatePrice())
