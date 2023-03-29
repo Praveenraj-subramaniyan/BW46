@@ -14,9 +14,11 @@ function getPG(movies) {
 a= new Movie("Iron Man","Marvel")
 b= new Movie("Batman","DC")
 c= new Movie("Ant Man","Marvel","pd")
+d= new Movie("Casino Royale","Eon Productions","PG 13")
 allMovies.push(a)
 allMovies.push(b)
 allMovies.push(c)
+allMovies.push(d)
 movieByRatings = getPG(allMovies)
 console.log(movieByRatings)
 ----------------------------------------------------------------------------------------------------------------------------------------------
