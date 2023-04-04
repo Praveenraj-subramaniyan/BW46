@@ -86,3 +86,27 @@ https.get('https://restcountries.com/v3.1/all', (response) => {
   console.error(error);
 });
 --------------------------------------------------------------------------------------------------------------------------
+5.
+const https = require('https');
+
+https.get('https://restcountries.com/v3.1/all', (response) => {
+  let data = '';
+
+  response.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  response.on('end', () => {
+    const countries = JSON.parse(data);
+    var USDollar = countries.filter(countries => countries.currencies  && countries.currencies.USD);
+    // const sum = Population.reduce((accumulator, currentValue) => accumulator + currentValue);
+     USDollar.forEach((USDollar) => {
+      console.log(USDollar.name.common);
+      console.log("---------------------------------------------------------");
+    });
+  
+  });
+}).on('error', (error) => {
+  console.error(error);
+});
+-----------------------------------------------------------------------------------------------------------------------------
