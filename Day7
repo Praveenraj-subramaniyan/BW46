@@ -65,3 +65,24 @@ https.get('https://restcountries.com/v3.1/all', (response) => {
 });
 
 -------------------------------------------------------------------------------------------------------------------------------------
+4.
+const https = require('https');
+
+https.get('https://restcountries.com/v3.1/all', (response) => {
+  let data = '';
+
+  response.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  response.on('end', () => {
+    const countries = JSON.parse(data);
+    var Population = countries.map(countries => countries.population);
+    const sum = Population.reduce((accumulator, currentValue) => accumulator + currentValue);
+    console.log(sum)
+  
+  });
+}).on('error', (error) => {
+  console.error(error);
+});
+--------------------------------------------------------------------------------------------------------------------------
