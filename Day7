@@ -1,0 +1,22 @@
+1.
+const https = require('https');
+
+https.get('https://restcountries.com/v3.1/all', (response) => {
+  let data = '';
+
+  response.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  response.on('end', () => {
+    const countries = JSON.parse(data);
+    var asia = countries.filter(countries => countries.region === "Asia")
+   asia.forEach((asia) => {
+      console.log(asia.name.common);
+      console.log("---------------------------------------------------------");
+    });
+  });
+}).on('error', (error) => {
+  console.error(error);
+});
+-----------------------------------------------------------------------------------------------------------------------------------
