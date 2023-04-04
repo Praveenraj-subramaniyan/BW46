@@ -42,3 +42,26 @@ https.get('https://restcountries.com/v3.1/all', (response) => {
   console.error(error);
 });
 --------------------------------------------------------------------------------------------------------------------------------------------
+3.
+const https = require('https');
+
+https.get('https://restcountries.com/v3.1/all', (response) => {
+  let data = '';
+
+  response.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  response.on('end', () => {
+    const countries = JSON.parse(data);
+    // var Population = countries.filter(countries => countries.population < 200000)
+   countries.forEach((countries) => {
+      console.log(countries.name.common + " " +countries.capital + " " + countries.flags.png );
+      console.log("---------------------------------------------------------");
+    });
+  });
+}).on('error', (error) => {
+  console.error(error);
+});
+
+-------------------------------------------------------------------------------------------------------------------------------------
